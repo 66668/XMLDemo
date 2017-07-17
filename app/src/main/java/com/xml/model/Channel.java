@@ -1,4 +1,4 @@
-package com.xml;
+package com.xml.model;
 
 /**
  * asset文件中对应channel.xml的实体类

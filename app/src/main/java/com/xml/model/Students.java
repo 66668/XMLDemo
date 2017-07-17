@@ -1,4 +1,4 @@
-package com.xml;
+package com.xml.model;
 
 /**
  *  解析students.xml创建的实体类

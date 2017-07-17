@@ -1,6 +1,6 @@
 package com.xml.sax1;
 
-import com.xml.Channel;
+import com.xml.model.Channel;
 
 import java.util.List;
 

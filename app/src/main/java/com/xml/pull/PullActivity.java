@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.xml.R;
-import com.xml.Students;
+import com.xml.model.Students;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;

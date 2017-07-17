@@ -7,9 +7,9 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
-import com.xml.Channel;
+import com.xml.model.Channel;
 import com.xml.R;
-import com.xml.Students;
+import com.xml.model.Students;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;

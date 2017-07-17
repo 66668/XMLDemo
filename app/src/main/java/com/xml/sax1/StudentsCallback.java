@@ -1,6 +1,6 @@
 package com.xml.sax1;
 
-import com.xml.Students;
+import com.xml.model.Students;
 
 import java.util.List;
 

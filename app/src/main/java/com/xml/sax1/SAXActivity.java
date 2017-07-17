@@ -6,9 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
-import com.xml.Channel;
+import com.xml.model.Channel;
 import com.xml.R;
-import com.xml.Students;
+import com.xml.model.Students;
 
 import org.xml.sax.SAXException;
 

@@ -3,7 +3,7 @@ package com.xml.sax2;
 
 import android.util.Log;
 
-import com.xml.Channel;
+import com.xml.model.Channel;
 
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
