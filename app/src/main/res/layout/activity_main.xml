@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xml.MainActivity">
+
+
+    <Button
+        android:id="@+id/btn_sax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SAX方式解析XML"/>
+
+    <Button
+        android:id="@+id/btn_sax2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SAX方式2解析XML"/>
+
+    <Button
+        android:id="@+id/btn_dom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DOM方式解析XML"/>
+
+    <Button
+        android:id="@+id/btn_pull"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PULL方式解析XML"/>
+
+    <TextView
+        android:id="@+id/tv_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
