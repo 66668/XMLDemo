@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.xml.dom.DOMActivity;
 import com.xml.pull.PullActivity;
 import com.xml.sax1.SAXActivity;
 import com.xml.sax2.SAX2Activity;
@@ -42,6 +43,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, SAX2Activity.class);
+                startActivity(intent);
+            }
+        });
+        /**
+         *DOM
+         */
+        findViewById(R.id.btn_dom).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, DOMActivity.class);
                 startActivity(intent);
             }
         });

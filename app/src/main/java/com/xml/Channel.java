@@ -1,4 +1,4 @@
-package com.xml.sax2;
+package com.xml;
 
 /**
  * asset文件中对应channel.xml的实体类

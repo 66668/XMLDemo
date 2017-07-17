@@ -3,6 +3,8 @@ package com.xml.sax2;
 
 import android.util.Log;
 
+import com.xml.Channel;
+
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
@@ -12,8 +14,8 @@ import java.util.List;
 
 /**
  * 解析 channel.xml 解析完后，调用.getList()方法获取数据，区别于SAXParserHandler使用回调
- *
- *
+ * <p>
+ * <p>
  * <p>
  * 这是安卓中内置的用于SAX处理XML的类，但是大多情况下我们都需要继承该类重写部分方法，才能达到处理XML数据的功能。
  * <p>
@@ -22,7 +24,7 @@ import java.util.List;
  * <p>
  * startElement方法
  * 这是处理每个节点所触发的第一个方法，通过这个方法你可以直接当前处理的节点的名称以及属性。
- *
+ * <p>
  * characters方法
  * 这是处理每个节点所触发的第二个方法，通过这个方法你可以直接当前处理的节点中的属性。
  * <p>
@@ -33,7 +35,7 @@ import java.util.List;
  * 如果当前的XML文档处理完毕后，将会触发该方法，在此方法内你可以将最终的结果保存并且销毁不需要使用的变量。
  */
 
-public class SAX2ParserHandler extends DefaultHandler {
+public class SAX2ChannelParserHandler extends DefaultHandler {
     private final String TAG = "SAX2";
     private List<Channel> list;//解析数据存储
     Channel channel;
@@ -112,7 +114,7 @@ public class SAX2ParserHandler extends DefaultHandler {
         Log.d(TAG, "characters: ");
         String str = new String(ch, start, length);//读取字符
         //item标签保存参数 name
-        if (currentState !=0) {
+        if (currentState != 0) {
             channel.setName(str);
             currentState = 0;
         }
@@ -120,8 +122,7 @@ public class SAX2ParserHandler extends DefaultHandler {
     }
 
     /**
-     *(4)标签结束
-     *
+     * (4)标签结束
      */
     @Override
     public void endElement(String uri, String localName, String qName) throws SAXException {
@@ -129,7 +130,7 @@ public class SAX2ParserHandler extends DefaultHandler {
         Log.d(TAG, "endElement: ");
 
         //标签结束后，将信息保存到list中
-        if(localName.equals("item")){
+        if (localName.equals("item")) {
             list.add(channel);
 
         }

@@ -10,28 +10,16 @@
 
 
     <Button
-        android:id="@+id/btn_sax"
+        android:id="@+id/btn_dom1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="SAX解析XML回调方式"/>
+        android:text="DOM解析students.xml文件"/>
 
     <Button
-        android:id="@+id/btn_sax2"
+        android:id="@+id/btn_dom2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="SAX标准步骤方式"/>
-
-    <Button
-        android:id="@+id/btn_dom"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="DOM方式解析XML"/>
-
-    <Button
-        android:id="@+id/btn_pull"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="PULL解析XML"/>
+        android:text="DOM解析channels.xml文件"/>
 
     <TextView
         android:id="@+id/tv_show"

@@ -1,4 +1,4 @@
-package com.xml.pull;
+package com.xml;
 
 /**
  *  解析students.xml创建的实体类

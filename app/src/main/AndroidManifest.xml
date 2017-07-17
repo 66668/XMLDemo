@@ -21,6 +21,7 @@
         <activity android:name=".sax2.SAX2Activity"></activity>
 
         <activity android:name=".pull.PullActivity"></activity>
+        <activity android:name=".dom.DOMActivity"></activity>
     </application>
 
 </manifest>
