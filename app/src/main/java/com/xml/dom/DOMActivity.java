@@ -92,6 +92,7 @@ public class DOMActivity extends AppCompatActivity {
 
     /**
      * 具体解析students.xml的方法
+     *
      * <student group="z1" id="001">
      * <name>张三</name>
      * <sex>男</sex>
